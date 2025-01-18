@@ -1,3 +1,8 @@
 spring:
   application:
     name: loggily
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
+    io.r2dbc: DEBUG

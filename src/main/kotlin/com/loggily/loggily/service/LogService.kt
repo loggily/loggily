@@ -9,4 +9,6 @@ class LogService(private val repository: LogRepository) {
     fun saveLogs(logs: List<Log>) = repository.saveAll(logs)
 
     fun getLogs() = repository.findAll()
+
+    fun findEnvironmentNamesContains(searchText: String) = repository.findEnvironmentNames("%$searchText%")
 }
