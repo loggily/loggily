@@ -18,6 +18,29 @@ repositories {
     mavenCentral()
 }
 
+testing {
+    suites {
+        val junitJupiterVersion = dependencyManagement.managedVersions["org.junit.jupiter:junit-jupiter"]
+
+        withType(JvmTestSuite::class) {
+            useJUnitJupiter(junitJupiterVersion)
+        }
+
+        register("integrationTest", JvmTestSuite::class) {
+            testType.set(TestSuiteType.INTEGRATION_TEST)
+            dependencies {
+                implementation(project())
+                implementation("org.springframework.boot:spring-boot-starter-test")
+                implementation("org.springframework.boot:spring-boot-testcontainers")
+                implementation("org.testcontainers:junit-jupiter")
+                implementation("org.testcontainers:postgresql")
+            }
+        }
+    }
+}
+
+configurations["integrationTestImplementation"].extendsFrom(configurations["testImplementation"])
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
@@ -33,12 +56,9 @@ dependencies {
     runtimeOnly("org.postgresql:postgresql")
     runtimeOnly("org.postgresql:r2dbc-postgresql")
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("io.projectreactor:reactor-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-    testImplementation("org.testcontainers:junit-jupiter")
-    testImplementation("org.testcontainers:postgresql")
+
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
@@ -48,6 +68,10 @@ kotlin {
     }
 }
 
-tasks.withType<Test> {
-    useJUnitPlatform()
+tasks.named("integrationTest") {
+    shouldRunAfter(tasks.named("test"))
+}
+
+tasks.named("check") {
+    dependsOn(tasks.named("integrationTest"))
 }

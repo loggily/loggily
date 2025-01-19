@@ -1,15 +1,11 @@
 package com.loggily.loggily
 
 import org.junit.jupiter.api.Test
-import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.context.annotation.Import
 
-@Import(TestcontainersConfiguration::class)
-@SpringBootTest
 class LoggilyApplicationTests {
 
 	@Test
-	fun contextLoads() {
+	fun `first test`() {
 	}
 
 }
