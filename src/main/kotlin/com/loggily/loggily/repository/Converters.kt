@@ -1,6 +1,7 @@
 package com.loggily.loggily.repository
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import io.r2dbc.postgresql.codec.Json
 import org.springframework.core.convert.converter.Converter
 import org.springframework.data.convert.ReadingConverter
 import org.springframework.data.convert.WritingConverter
@@ -8,11 +9,12 @@ import org.springframework.data.convert.WritingConverter
 val objectMapper = jacksonObjectMapper()
 
 @WritingConverter
-class StructuredLogToJsonStringConverter : Converter<StructuredLog, String> {
-    override fun convert(source: StructuredLog): String = objectMapper.writeValueAsString(source)
+class StructuredLogToJsonConverter : Converter<StructuredLog, Json> {
+    override fun convert(source: StructuredLog): Json = Json.of(objectMapper.writeValueAsString(source))
 }
 
 @ReadingConverter
-class JsonStringToStructuredLogConverter : Converter<String, StructuredLog> {
-    override fun convert(source: String): StructuredLog = objectMapper.readValue(source, StructuredLog::class.java)
+class JsonToStructuredLogConverter : Converter<Json, StructuredLog> {
+    override fun convert(source: Json): StructuredLog =
+        objectMapper.readValue(source.asString(), StructuredLog::class.java)
 }

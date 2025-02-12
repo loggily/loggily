@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository
 @Repository
 interface LogRepository : CoroutineCrudRepository<Log, Long> {
 
-    @Query("SELECT DISTINCT environment FROM logs WHERE environment LIKE ?1")
+    @Query("SELECT DISTINCT environment FROM logs WHERE environment LIKE $1")
     fun findEnvironmentNames(searchText: String): Flow<String>
 }
