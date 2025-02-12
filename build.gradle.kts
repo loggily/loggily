@@ -32,6 +32,7 @@ testing {
                 implementation(project())
                 implementation("org.springframework.boot:spring-boot-starter-test")
                 implementation("org.springframework.boot:spring-boot-testcontainers")
+                implementation("org.testcontainers:r2dbc")
                 implementation("org.testcontainers:junit-jupiter")
                 implementation("org.testcontainers:postgresql")
             }

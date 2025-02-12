@@ -1,0 +1,1372 @@
+{
+  "resourceLogs": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "host.arch",
+            "value": {
+              "stringValue": "amd64"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "WCCK-MACHINE"
+            }
+          },
+          {
+            "key": "os.description",
+            "value": {
+              "stringValue": "Windows 11 10.0"
+            }
+          },
+          {
+            "key": "os.type",
+            "value": {
+              "stringValue": "windows"
+            }
+          },
+          {
+            "key": "process.command_line",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe -javaagent:C:\\OpenTelemetry\\opentelemetry-javaagent-2.1.0.jar -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 com.otel.gateway.OtelApplicationKt"
+            }
+          },
+          {
+            "key": "process.executable.path",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe"
+            }
+          },
+          {
+            "key": "process.pid",
+            "value": {
+              "intValue": "38348"
+            }
+          },
+          {
+            "key": "process.runtime.description",
+            "value": {
+              "stringValue": "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "process.runtime.name",
+            "value": {
+              "stringValue": "Java(TM) SE Runtime Environment"
+            }
+          },
+          {
+            "key": "process.runtime.version",
+            "value": {
+              "stringValue": "21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "otel"
+            }
+          },
+          {
+            "key": "telemetry.distro.name",
+            "value": {
+              "stringValue": "opentelemetry-java-instrumentation"
+            }
+          },
+          {
+            "key": "telemetry.distro.version",
+            "value": {
+              "stringValue": "2.1.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "java"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.35.0"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "org.apache.coyote.http11.Http11NioProtocol"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1727865677228000000",
+              "observedTimeUnixNano": "1727865677228611200",
+              "severityNumber": 9,
+              "severityText": "INFO",
+              "body": {
+                "stringValue": "Starting ProtocolHandler [\"http-nio-7080\"]"
+              },
+              "traceId": "",
+              "spanId": ""
+            }
+          ]
+        },
+        {
+          "scope": {
+            "name": "org.springframework.boot.web.embedded.tomcat.TomcatWebServer"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1727865677321265000",
+              "observedTimeUnixNano": "1727865677321265000",
+              "severityNumber": 9,
+              "severityText": "INFO",
+              "body": {
+                "stringValue": "Tomcat started on port 7080 (http)"
+              },
+              "traceId": "",
+              "spanId": ""
+            }
+          ]
+        },
+        {
+          "scope": {
+            "name": "com.otel.gateway.OtelApplicationKt"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1727865677428952400",
+              "observedTimeUnixNano": "1727865677428952400",
+              "severityNumber": 9,
+              "severityText": "INFO",
+              "body": {
+                "stringValue": "Started OtelApplicationKt in 10.7 seconds (process running for 16.695)"
+              },
+              "traceId": "",
+              "spanId": ""
+            }
+          ]
+        }
+      ],
+      "schemaUrl": "https://opentelemetry.io/schemas/1.23.1"
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "host.arch",
+            "value": {
+              "stringValue": "amd64"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "LMMK-MACHINE"
+            }
+          },
+          {
+            "key": "k8s.container.name",
+            "value": {
+              "stringValue": "person"
+            }
+          },
+          {
+            "key": "k8s.deployment.name",
+            "value": {
+              "stringValue": "person"
+            }
+          },
+          {
+            "key": "k8s.namespace.name",
+            "value": {
+              "stringValue": "demo-services-dev"
+            }
+          },
+          {
+            "key": "k8s.pod.name",
+            "value": {
+              "stringValue": "person-7f87799957-gwhsq"
+            }
+          },
+          {
+            "key": "os.description",
+            "value": {
+              "stringValue": "Windows 11 10.0"
+            }
+          },
+          {
+            "key": "os.type",
+            "value": {
+              "stringValue": "windows"
+            }
+          },
+          {
+            "key": "process.command_line",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe -javaagent:C:\\Projects\\OpenTelemetry\\opentelemetry-javaagent-2.1.0.jar -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 org.otel.gateway.OtelApplicationKt"
+            }
+          },
+          {
+            "key": "process.executable.path",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe"
+            }
+          },
+          {
+            "key": "process.pid",
+            "value": {
+              "intValue": "24152"
+            }
+          },
+          {
+            "key": "process.runtime.description",
+            "value": {
+              "stringValue": "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "process.runtime.name",
+            "value": {
+              "stringValue": "Java(TM) SE Runtime Environment"
+            }
+          },
+          {
+            "key": "process.runtime.version",
+            "value": {
+              "stringValue": "21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "otel"
+            }
+          },
+          {
+            "key": "telemetry.distro.name",
+            "value": {
+              "stringValue": "opentelemetry-java-instrumentation"
+            }
+          },
+          {
+            "key": "telemetry.distro.version",
+            "value": {
+              "stringValue": "2.1.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "java"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.35.0"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "com.otel.gateway.OtelApplicationKt"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024551631783300",
+              "observedTimeUnixNano": "1728024551631783300",
+              "severityNumber": 9,
+              "severityText": "INFO",
+              "body": {
+                "stringValue": "Started OtelApplicationKt in 10.49 seconds (process running for 16.854)"
+              },
+              "traceId": "",
+              "spanId": ""
+            }
+          ]
+        },
+        {
+          "scope": {
+            "name": "org.apache.coyote.http11.Http11NioProtocol"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024551427000000",
+              "observedTimeUnixNano": "1728024551427743400",
+              "severityNumber": 9,
+              "severityText": "INFO",
+              "body": {
+                "stringValue": "Starting ProtocolHandler [\"http-nio-7080\"]"
+              },
+              "traceId": "",
+              "spanId": ""
+            }
+          ]
+        },
+        {
+          "scope": {
+            "name": "org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024550742032400",
+              "observedTimeUnixNano": "1728024550742032400",
+              "severityNumber": 9,
+              "severityText": "INFO",
+              "body": {
+                "stringValue": "Exposing 1 endpoint beneath base path '/actuator'"
+              },
+              "traceId": "",
+              "spanId": ""
+            }
+          ]
+        },
+        {
+          "scope": {
+            "name": "org.springframework.boot.web.embedded.tomcat.TomcatWebServer"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024551506311000",
+              "observedTimeUnixNano": "1728024551506311000",
+              "severityNumber": 9,
+              "severityText": "INFO",
+              "body": {
+                "stringValue": "Tomcat started on port 7080 (http)"
+              },
+              "traceId": "",
+              "spanId": ""
+            }
+          ]
+        }
+      ],
+      "schemaUrl": "https://opentelemetry.io/schemas/1.23.1"
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "host.arch",
+            "value": {
+              "stringValue": "amd64"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "CPPK-MACHINE"
+            }
+          },
+          {
+            "key": "k8s.container.name",
+            "value": {
+              "stringValue": "crow"
+            }
+          },
+          {
+            "key": "k8s.deployment.name",
+            "value": {
+              "stringValue": "crow"
+            }
+          },
+          {
+            "key": "k8s.namespace.name",
+            "value": {
+              "stringValue": "birds-services-dev"
+            }
+          },
+          {
+            "key": "k8s.pod.name",
+            "value": {
+              "stringValue": "crow-7f87799957-gwhsq"
+            }
+          },
+          {
+            "key": "os.description",
+            "value": {
+              "stringValue": "Windows 11 10.0"
+            }
+          },
+          {
+            "key": "os.type",
+            "value": {
+              "stringValue": "windows"
+            }
+          },
+          {
+            "key": "process.command_line",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe -javaagent:C:\\Projects\\OpenTelemetry\\opentelemetry-javaagent-2.1.0.jar -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 org.animal.gateway.AnimalApplicationKt"
+            }
+          },
+          {
+            "key": "process.executable.path",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe"
+            }
+          },
+          {
+            "key": "process.pid",
+            "value": {
+              "intValue": "40936"
+            }
+          },
+          {
+            "key": "process.runtime.description",
+            "value": {
+              "stringValue": "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "process.runtime.name",
+            "value": {
+              "stringValue": "Java(TM) SE Runtime Environment"
+            }
+          },
+          {
+            "key": "process.runtime.version",
+            "value": {
+              "stringValue": "21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "crow-gateway"
+            }
+          },
+          {
+            "key": "telemetry.distro.name",
+            "value": {
+              "stringValue": "opentelemetry-java-instrumentation"
+            }
+          },
+          {
+            "key": "telemetry.distro.version",
+            "value": {
+              "stringValue": "2.1.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "java"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.35.0"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024815461764300",
+              "observedTimeUnixNano": "1728024815461764300",
+              "severityNumber": 17,
+              "severityText": "ERROR",
+              "body": {
+                "stringValue": "[12dfd65f]  500 Server Error for HTTP GET \"/animal/Cat\""
+              },
+              "attributes": [
+                {
+                  "key": "exception.message",
+                  "value": {
+                    "stringValue": "Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries "
+                  }
+                },
+                {
+                  "key": "exception.stacktrace",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException: Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries \r\n\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\tSuppressed: The stacktrace has been enhanced by Reactor, refer to additional information below: \r\nError has been observed at the following site(s):\r\n\t*__checkpoint ⇢ orh.animal.gateway.CacheControlWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ HTTP GET \"/fhir/Patient\" [ExceptionHandlingWebHandler]\r\nOriginal Stack Trace:\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1098)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:457)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.onResponse(DnsResolveContext.java:688)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.access$500(DnsResolveContext.java:69)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:515)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$2.operationComplete(DnsQueryContext.java:463)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$1.channelRead(DnsQueryContext.java:432)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\r\n\t\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\t\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\t\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\r\n\t\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\t\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\t\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nCaused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN\r\n\tat io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source)\r\n"
+                  }
+                },
+                {
+                  "key": "exception.type",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException"
+                  }
+                }
+              ],
+              "flags": 1,
+              "traceId": "037605efba134ea379dd6a26f48d996c",
+              "spanId": "4412d8e51c11c2bb"
+            }
+          ]
+        }
+      ],
+      "schemaUrl": "https://opentelemetry.io/schemas/1.23.1"
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "host.arch",
+            "value": {
+              "stringValue": "amd64"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "CPPK-MACHINE"
+            }
+          },
+          {
+            "key": "k8s.container.name",
+            "value": {
+              "stringValue": "crow"
+            }
+          },
+          {
+            "key": "k8s.deployment.name",
+            "value": {
+              "stringValue": "crow"
+            }
+          },
+          {
+            "key": "k8s.namespace.name",
+            "value": {
+              "stringValue": "birds-services-dev"
+            }
+          },
+          {
+            "key": "k8s.pod.name",
+            "value": {
+              "stringValue": "crow-7f87799957-gwhsq"
+            }
+          },
+          {
+            "key": "os.description",
+            "value": {
+              "stringValue": "Windows 11 10.0"
+            }
+          },
+          {
+            "key": "os.type",
+            "value": {
+              "stringValue": "windows"
+            }
+          },
+          {
+            "key": "process.command_line",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe -javaagent:C:\\Projects\\OpenTelemetry\\opentelemetry-javaagent-2.1.0.jar -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 org.animal.gateway.AnimalApplicationKt"
+            }
+          },
+          {
+            "key": "process.executable.path",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe"
+            }
+          },
+          {
+            "key": "process.pid",
+            "value": {
+              "intValue": "40936"
+            }
+          },
+          {
+            "key": "process.runtime.description",
+            "value": {
+              "stringValue": "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "process.runtime.name",
+            "value": {
+              "stringValue": "Java(TM) SE Runtime Environment"
+            }
+          },
+          {
+            "key": "process.runtime.version",
+            "value": {
+              "stringValue": "21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "crow-gateway"
+            }
+          },
+          {
+            "key": "telemetry.distro.name",
+            "value": {
+              "stringValue": "opentelemetry-java-instrumentation"
+            }
+          },
+          {
+            "key": "telemetry.distro.version",
+            "value": {
+              "stringValue": "2.1.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "java"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.35.0"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024815461764300",
+              "observedTimeUnixNano": "1728024815461764300",
+              "severityNumber": 17,
+              "severityText": "ERROR",
+              "body": {
+                "stringValue": "[12dfd65f]  500 Server Error for HTTP GET \"/animal/Cat\""
+              },
+              "attributes": [
+                {
+                  "key": "exception.message",
+                  "value": {
+                    "stringValue": "Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries "
+                  }
+                },
+                {
+                  "key": "exception.stacktrace",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException: Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries \r\n\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\tSuppressed: The stacktrace has been enhanced by Reactor, refer to additional information below: \r\nError has been observed at the following site(s):\r\n\t*__checkpoint ⇢ orh.animal.gateway.CacheControlWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ HTTP GET \"/fhir/Patient\" [ExceptionHandlingWebHandler]\r\nOriginal Stack Trace:\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1098)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:457)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.onResponse(DnsResolveContext.java:688)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.access$500(DnsResolveContext.java:69)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:515)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$2.operationComplete(DnsQueryContext.java:463)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$1.channelRead(DnsQueryContext.java:432)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\r\n\t\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\t\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\t\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\r\n\t\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\t\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\t\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nCaused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN\r\n\tat io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source)\r\n"
+                  }
+                },
+                {
+                  "key": "exception.type",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException"
+                  }
+                }
+              ],
+              "flags": 1,
+              "traceId": "037605efba134ea379dd6a26f48d996c",
+              "spanId": "4412d8e51c11c2bb"
+            }
+          ]
+        }
+      ],
+      "schemaUrl": "https://opentelemetry.io/schemas/1.23.1"
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "host.arch",
+            "value": {
+              "stringValue": "amd64"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "CPPK-MACHINE"
+            }
+          },
+          {
+            "key": "k8s.container.name",
+            "value": {
+              "stringValue": "crow"
+            }
+          },
+          {
+            "key": "k8s.deployment.name",
+            "value": {
+              "stringValue": "crow"
+            }
+          },
+          {
+            "key": "k8s.namespace.name",
+            "value": {
+              "stringValue": "birds-services-dev"
+            }
+          },
+          {
+            "key": "k8s.pod.name",
+            "value": {
+              "stringValue": "crow-7f87799957-gwhsq"
+            }
+          },
+          {
+            "key": "os.description",
+            "value": {
+              "stringValue": "Windows 11 10.0"
+            }
+          },
+          {
+            "key": "os.type",
+            "value": {
+              "stringValue": "windows"
+            }
+          },
+          {
+            "key": "process.command_line",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe -javaagent:C:\\Projects\\OpenTelemetry\\opentelemetry-javaagent-2.1.0.jar -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 org.animal.gateway.AnimalApplicationKt"
+            }
+          },
+          {
+            "key": "process.executable.path",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe"
+            }
+          },
+          {
+            "key": "process.pid",
+            "value": {
+              "intValue": "40936"
+            }
+          },
+          {
+            "key": "process.runtime.description",
+            "value": {
+              "stringValue": "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "process.runtime.name",
+            "value": {
+              "stringValue": "Java(TM) SE Runtime Environment"
+            }
+          },
+          {
+            "key": "process.runtime.version",
+            "value": {
+              "stringValue": "21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "crow-gateway"
+            }
+          },
+          {
+            "key": "telemetry.distro.name",
+            "value": {
+              "stringValue": "opentelemetry-java-instrumentation"
+            }
+          },
+          {
+            "key": "telemetry.distro.version",
+            "value": {
+              "stringValue": "2.1.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "java"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.35.0"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024815461764300",
+              "observedTimeUnixNano": "1728024815461764300",
+              "severityNumber": 17,
+              "severityText": "ERROR",
+              "body": {
+                "stringValue": "[12dfd65f]  500 Server Error for HTTP GET \"/animal/Cat\""
+              },
+              "attributes": [
+                {
+                  "key": "exception.message",
+                  "value": {
+                    "stringValue": "Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries "
+                  }
+                },
+                {
+                  "key": "exception.stacktrace",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException: Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries \r\n\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\tSuppressed: The stacktrace has been enhanced by Reactor, refer to additional information below: \r\nError has been observed at the following site(s):\r\n\t*__checkpoint ⇢ orh.animal.gateway.CacheControlWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ HTTP GET \"/fhir/Patient\" [ExceptionHandlingWebHandler]\r\nOriginal Stack Trace:\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1098)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:457)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.onResponse(DnsResolveContext.java:688)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.access$500(DnsResolveContext.java:69)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:515)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$2.operationComplete(DnsQueryContext.java:463)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$1.channelRead(DnsQueryContext.java:432)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\r\n\t\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\t\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\t\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\r\n\t\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\t\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\t\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nCaused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN\r\n\tat io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source)\r\n"
+                  }
+                },
+                {
+                  "key": "exception.type",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException"
+                  }
+                }
+              ],
+              "flags": 1,
+              "traceId": "037605efba134ea379dd6a26f48d996c",
+              "spanId": "4412d8e51c11c2bb"
+            }
+          ]
+        }
+      ],
+      "schemaUrl": "https://opentelemetry.io/schemas/1.23.1"
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "host.arch",
+            "value": {
+              "stringValue": "amd64"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "CPPK-MACHINE"
+            }
+          },
+          {
+            "key": "k8s.container.name",
+            "value": {
+              "stringValue": "crow"
+            }
+          },
+          {
+            "key": "k8s.deployment.name",
+            "value": {
+              "stringValue": "crow"
+            }
+          },
+          {
+            "key": "k8s.namespace.name",
+            "value": {
+              "stringValue": "birds-services-dev"
+            }
+          },
+          {
+            "key": "k8s.pod.name",
+            "value": {
+              "stringValue": "crow-7f87799957-gwhsq"
+            }
+          },
+          {
+            "key": "os.description",
+            "value": {
+              "stringValue": "Windows 11 10.0"
+            }
+          },
+          {
+            "key": "os.type",
+            "value": {
+              "stringValue": "windows"
+            }
+          },
+          {
+            "key": "process.command_line",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe -javaagent:C:\\Projects\\OpenTelemetry\\opentelemetry-javaagent-2.1.0.jar -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 org.animal.gateway.AnimalApplicationKt"
+            }
+          },
+          {
+            "key": "process.executable.path",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe"
+            }
+          },
+          {
+            "key": "process.pid",
+            "value": {
+              "intValue": "40936"
+            }
+          },
+          {
+            "key": "process.runtime.description",
+            "value": {
+              "stringValue": "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "process.runtime.name",
+            "value": {
+              "stringValue": "Java(TM) SE Runtime Environment"
+            }
+          },
+          {
+            "key": "process.runtime.version",
+            "value": {
+              "stringValue": "21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "crow-gateway"
+            }
+          },
+          {
+            "key": "telemetry.distro.name",
+            "value": {
+              "stringValue": "opentelemetry-java-instrumentation"
+            }
+          },
+          {
+            "key": "telemetry.distro.version",
+            "value": {
+              "stringValue": "2.1.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "java"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.35.0"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024815461764300",
+              "observedTimeUnixNano": "1728024815461764300",
+              "severityNumber": 17,
+              "severityText": "ERROR",
+              "body": {
+                "stringValue": "[12dfd65f]  500 Server Error for HTTP GET \"/animal/Cat\""
+              },
+              "attributes": [
+                {
+                  "key": "exception.message",
+                  "value": {
+                    "stringValue": "Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries "
+                  }
+                },
+                {
+                  "key": "exception.stacktrace",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException: Failed to resolve 'crow' [A(1), AAAA(28)] after 8 queries \r\n\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\tSuppressed: The stacktrace has been enhanced by Reactor, refer to additional information below: \r\nError has been observed at the following site(s):\r\n\t*__checkpoint ⇢ orh.animal.gateway.CacheControlWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ HTTP GET \"/fhir/Patient\" [ExceptionHandlingWebHandler]\r\nOriginal Stack Trace:\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1098)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:457)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.onResponse(DnsResolveContext.java:688)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.access$500(DnsResolveContext.java:69)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:515)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$2.operationComplete(DnsQueryContext.java:463)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$1.channelRead(DnsQueryContext.java:432)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\r\n\t\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\t\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\t\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\r\n\t\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\t\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\t\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nCaused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN\r\n\tat io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source)\r\n"
+                  }
+                },
+                {
+                  "key": "exception.type",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException"
+                  }
+                }
+              ],
+              "flags": 1,
+              "traceId": "037605efba134ea379dd6a26f48d996c",
+              "spanId": "4412d8e51c11c2bb"
+            }
+          ]
+        }
+      ],
+      "schemaUrl": "https://opentelemetry.io/schemas/1.23.1"
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "host.arch",
+            "value": {
+              "stringValue": "amd64"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "CPPK-MACHINE"
+            }
+          },
+          {
+            "key": "k8s.container.name",
+            "value": {
+              "stringValue": "peacock"
+            }
+          },
+          {
+            "key": "k8s.deployment.name",
+            "value": {
+              "stringValue": "peacock"
+            }
+          },
+          {
+            "key": "k8s.namespace.name",
+            "value": {
+              "stringValue": "birds-services-dev"
+            }
+          },
+          {
+            "key": "k8s.pod.name",
+            "value": {
+              "stringValue": "peacock-7f87799957-gwhsq"
+            }
+          },
+          {
+            "key": "os.description",
+            "value": {
+              "stringValue": "Windows 11 10.0"
+            }
+          },
+          {
+            "key": "os.type",
+            "value": {
+              "stringValue": "windows"
+            }
+          },
+          {
+            "key": "process.command_line",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe -javaagent:C:\\Projects\\OpenTelemetry\\opentelemetry-javaagent-2.1.0.jar -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 org.animal.gateway.AnimalApplicationKt"
+            }
+          },
+          {
+            "key": "process.executable.path",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe"
+            }
+          },
+          {
+            "key": "process.pid",
+            "value": {
+              "intValue": "40936"
+            }
+          },
+          {
+            "key": "process.runtime.description",
+            "value": {
+              "stringValue": "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "process.runtime.name",
+            "value": {
+              "stringValue": "Java(TM) SE Runtime Environment"
+            }
+          },
+          {
+            "key": "process.runtime.version",
+            "value": {
+              "stringValue": "21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "crow-gateway"
+            }
+          },
+          {
+            "key": "telemetry.distro.name",
+            "value": {
+              "stringValue": "opentelemetry-java-instrumentation"
+            }
+          },
+          {
+            "key": "telemetry.distro.version",
+            "value": {
+              "stringValue": "2.1.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "java"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.35.0"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024815461764300",
+              "observedTimeUnixNano": "1728024815461764300",
+              "severityNumber": 17,
+              "severityText": "ERROR",
+              "body": {
+                "stringValue": "[12dfd65f]  500 Server Error for HTTP GET \"/animal/Cat\""
+              },
+              "attributes": [
+                {
+                  "key": "exception.message",
+                  "value": {
+                    "stringValue": "Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries "
+                  }
+                },
+                {
+                  "key": "exception.stacktrace",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException: Failed to resolve 'peacock' [A(1), AAAA(28)] after 8 queries \r\n\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\tSuppressed: The stacktrace has been enhanced by Reactor, refer to additional information below: \r\nError has been observed at the following site(s):\r\n\t*__checkpoint ⇢ orh.animal.gateway.CacheControlWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ HTTP GET \"/fhir/Patient\" [ExceptionHandlingWebHandler]\r\nOriginal Stack Trace:\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1098)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:457)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.onResponse(DnsResolveContext.java:688)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.access$500(DnsResolveContext.java:69)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:515)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$2.operationComplete(DnsQueryContext.java:463)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$1.channelRead(DnsQueryContext.java:432)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\r\n\t\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\t\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\t\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\r\n\t\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\t\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\t\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nCaused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN\r\n\tat io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source)\r\n"
+                  }
+                },
+                {
+                  "key": "exception.type",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException"
+                  }
+                }
+              ],
+              "flags": 1,
+              "traceId": "037605efba134ea379dd6a26f48d996c",
+              "spanId": "4412d8e51c11c2bb"
+            }
+          ]
+        }
+      ],
+      "schemaUrl": "https://opentelemetry.io/schemas/1.23.1"
+    },
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "host.arch",
+            "value": {
+              "stringValue": "amd64"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "CPPK-MACHINE"
+            }
+          },
+          {
+            "key": "k8s.container.name",
+            "value": {
+              "stringValue": "animal"
+            }
+          },
+          {
+            "key": "k8s.deployment.name",
+            "value": {
+              "stringValue": "animal"
+            }
+          },
+          {
+            "key": "k8s.namespace.name",
+            "value": {
+              "stringValue": "animal-services-dev"
+            }
+          },
+          {
+            "key": "k8s.pod.name",
+            "value": {
+              "stringValue": "animal-7f87799957-gwhsq"
+            }
+          },
+          {
+            "key": "os.description",
+            "value": {
+              "stringValue": "Windows 11 10.0"
+            }
+          },
+          {
+            "key": "os.type",
+            "value": {
+              "stringValue": "windows"
+            }
+          },
+          {
+            "key": "process.command_line",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe -javaagent:C:\\Projects\\OpenTelemetry\\opentelemetry-javaagent-2.1.0.jar -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 org.animal.gateway.AnimalApplicationKt"
+            }
+          },
+          {
+            "key": "process.executable.path",
+            "value": {
+              "stringValue": "C:\\Java\\jdk-21\\bin\\java.exe"
+            }
+          },
+          {
+            "key": "process.pid",
+            "value": {
+              "intValue": "40936"
+            }
+          },
+          {
+            "key": "process.runtime.description",
+            "value": {
+              "stringValue": "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "process.runtime.name",
+            "value": {
+              "stringValue": "Java(TM) SE Runtime Environment"
+            }
+          },
+          {
+            "key": "process.runtime.version",
+            "value": {
+              "stringValue": "21.0.2+13-LTS-58"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "animal-gateway"
+            }
+          },
+          {
+            "key": "telemetry.distro.name",
+            "value": {
+              "stringValue": "opentelemetry-java-instrumentation"
+            }
+          },
+          {
+            "key": "telemetry.distro.version",
+            "value": {
+              "stringValue": "2.1.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "java"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.35.0"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler"
+          },
+          "logRecords": [
+            {
+              "timeUnixNano": "1728024815461764300",
+              "observedTimeUnixNano": "1728024815461764300",
+              "severityNumber": 17,
+              "severityText": "ERROR",
+              "body": {
+                "stringValue": "[12dfd65f]  500 Server Error for HTTP GET \"/animal/Cat\""
+              },
+              "attributes": [
+                {
+                  "key": "exception.message",
+                  "value": {
+                    "stringValue": "Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries "
+                  }
+                },
+                {
+                  "key": "exception.stacktrace",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException: Failed to resolve 'animal' [A(1), AAAA(28)] after 8 queries \r\n\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\tSuppressed: The stacktrace has been enhanced by Reactor, refer to additional information below: \r\nError has been observed at the following site(s):\r\n\t*__checkpoint ⇢ orh.animal.gateway.CacheControlWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]\r\n\t*__checkpoint ⇢ HTTP GET \"/fhir/Patient\" [ExceptionHandlingWebHandler]\r\nOriginal Stack Trace:\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1151)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1098)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:457)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.onResponse(DnsResolveContext.java:688)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext.access$500(DnsResolveContext.java:69)\r\n\t\tat io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:515)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$2.operationComplete(DnsQueryContext.java:463)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)\r\n\t\tat io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:345)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:336)\r\n\t\tat io.netty.resolver.dns.DnsQueryContext$6$1.channelRead(DnsQueryContext.java:432)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)\r\n\t\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\r\n\t\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1407)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\r\n\t\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\r\n\t\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)\r\n\t\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\t\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\t\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\t\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)\r\n\t\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\t\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\t\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nCaused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN\r\n\tat io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source)\r\n"
+                  }
+                },
+                {
+                  "key": "exception.type",
+                  "value": {
+                    "stringValue": "java.net.UnknownHostException"
+                  }
+                }
+              ],
+              "flags": 1,
+              "traceId": "037605efba134ea379dd6a26f48d996c",
+              "spanId": "4412d8e51c11c2bb"
+            }
+          ]
+        }
+      ],
+      "schemaUrl": "https://opentelemetry.io/schemas/1.23.1"
+    }
+  ]
+}
