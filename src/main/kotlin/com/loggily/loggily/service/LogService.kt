@@ -14,4 +14,7 @@ class LogService(private val repository: LogRepository) {
 
     fun findApplicationNamesByEnvironment(environmentName: String) =
         repository.findApplicationNamesByEnvironment(environmentName)
+
+    fun findHostNamesByEnvironmentAndApplication(environmentName: String, applicationName: String) = repository
+        .findHostNamesByEnvironmentAndApplication(environmentName, applicationName)
 }

@@ -7,6 +7,7 @@ import org.springframework.http.MediaType
 import org.springframework.web.reactive.function.server.*
 
 private const val ENVIRONMENT_PATH_VARIABLE = "environment"
+private const val APPLICATION_PATH_VARIABLE = "application"
 
 private const val SEARCH_TEXT_PARAM = "contains"
 
@@ -36,6 +37,14 @@ class DashboardRouter(private val dashboardService: DashboardService) {
                 val pathVariable = it.pathVariable(ENVIRONMENT_PATH_VARIABLE)
                 ServerResponse.ok()
                     .bodyValueAndAwait(dashboardService.findApplicationNamesByEnvironment(pathVariable))
+            }
+        GET("$dashboardPrefixPattern/environments/{${ENVIRONMENT_PATH_VARIABLE}}/applications/{${APPLICATION_PATH_VARIABLE}}/hosts/name")
+            .and(accept(MediaType.APPLICATION_JSON))
+            .invoke {
+                val environment = it.pathVariable(ENVIRONMENT_PATH_VARIABLE)
+                val application = it.pathVariable(APPLICATION_PATH_VARIABLE)
+                ServerResponse.ok()
+                    .bodyValueAndAwait(dashboardService.findHostNamesByEnvironmentAndApplication(environment, application))
             }
     }
 

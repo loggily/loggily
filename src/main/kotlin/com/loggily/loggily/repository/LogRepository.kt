@@ -27,4 +27,14 @@ interface LogRepository : CoroutineCrudRepository<Log, Long> {
         """
     )
     fun findApplicationNamesByEnvironment(environmentName: String): Flow<String>
+
+    @Query(
+        """
+        SELECT DISTINCT host 
+        FROM logs 
+        WHERE environment = $1 AND application = $2 
+        ORDER BY host ASC
+        """
+    )
+    fun findHostNamesByEnvironmentAndApplication(environmentName: String, applicationName: String): Flow<String>
 }

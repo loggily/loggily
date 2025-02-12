@@ -20,4 +20,8 @@ class DashboardService(private val logService: LogService) {
     suspend fun findApplicationNamesByEnvironment(environmentName: String): List<String> =
         logService.findApplicationNamesByEnvironment(environmentName)
             .toCollection(mutableListOf())
+
+    suspend fun findHostNamesByEnvironmentAndApplication(environmentName: String, applicationName: String): List<String> =
+        logService.findHostNamesByEnvironmentAndApplication(environmentName, applicationName)
+            .toCollection(mutableListOf())
 }
