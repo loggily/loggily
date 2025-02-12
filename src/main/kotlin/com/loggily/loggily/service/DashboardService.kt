@@ -16,4 +16,8 @@ class DashboardService(private val logService: LogService) {
     suspend fun findEnvironmentNamesContains(searchText: String): List<String> =
         logService.findEnvironmentNamesContains(searchText)
             .toCollection(mutableListOf())
+
+    suspend fun findApplicationNamesByEnvironment(environmentName: String): List<String> =
+        logService.findApplicationNamesByEnvironment(environmentName)
+            .toCollection(mutableListOf())
 }

@@ -46,4 +46,18 @@ class LoggilyEndToEndTest {
 
         assertThat(result).containsExactly("animal-services-dev", "birds-services-dev", "demo-services-dev")
     }
+
+    @Order(2)
+    @Test
+    fun `it should be possible to find unique and alphabetically sorted application names for an environment name`() {
+        val environmentName = "birds-services-dev"
+        val result = webTestClient.get().uri("/api/dashboard/environments/${environmentName}/applications/name")
+            .accept(MediaType.APPLICATION_JSON)
+            .exchange()
+            .expectStatus().isOk
+            .expectBody(Array<String>::class.java)
+            .returnResult().responseBody
+
+        assertThat(result).containsExactly("crow", "peacock")
+    }
 }

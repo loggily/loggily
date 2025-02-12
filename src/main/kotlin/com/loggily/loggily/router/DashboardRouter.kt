@@ -4,10 +4,9 @@ import com.loggily.loggily.service.DashboardService
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.MediaType
-import org.springframework.web.reactive.function.server.ServerResponse
-import org.springframework.web.reactive.function.server.bodyAndAwait
-import org.springframework.web.reactive.function.server.bodyValueAndAwait
-import org.springframework.web.reactive.function.server.coRouter
+import org.springframework.web.reactive.function.server.*
+
+private const val ENVIRONMENT_PATH_VARIABLE = "environment"
 
 private const val SEARCH_TEXT_PARAM = "contains"
 
@@ -30,6 +29,13 @@ class DashboardRouter(private val dashboardService: DashboardService) {
                         ServerResponse.ok()
                             .bodyValueAndAwait(dashboardService.findEnvironmentNamesContains(searchText))
                     }
+            }
+        GET("$dashboardPrefixPattern/environments/{${ENVIRONMENT_PATH_VARIABLE}}/applications/name")
+            .and(accept(MediaType.APPLICATION_JSON))
+            .invoke {
+                val pathVariable = it.pathVariable(ENVIRONMENT_PATH_VARIABLE)
+                ServerResponse.ok()
+                    .bodyValueAndAwait(dashboardService.findApplicationNamesByEnvironment(pathVariable))
             }
     }
 
