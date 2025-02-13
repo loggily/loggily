@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.http.MediaType
 import org.springframework.web.reactive.function.server.*
 
-private const val ENVIRONMENT_PATH_VARIABLE = "environment"
-private const val APPLICATION_PATH_VARIABLE = "application"
+private const val ENVIRONMENT_NAME_PARAM = "environmentName"
+private const val APPLICATION_NAME_PARAM = "applicationName"
 
 private const val SEARCH_TEXT_PARAM = "contains"
 
@@ -31,20 +31,29 @@ class DashboardRouter(private val dashboardService: DashboardService) {
                             .bodyValueAndAwait(dashboardService.findEnvironmentNamesContains(searchText))
                     }
             }
-        GET("$dashboardPrefixPattern/environments/{${ENVIRONMENT_PATH_VARIABLE}}/applications/name")
+        GET("$dashboardPrefixPattern/applications/name")
             .and(accept(MediaType.APPLICATION_JSON))
+            .and(queryParam(ENVIRONMENT_NAME_PARAM) { it.isNotEmpty() })
             .invoke {
-                val pathVariable = it.pathVariable(ENVIRONMENT_PATH_VARIABLE)
+                val environmentName = it.queryParam(ENVIRONMENT_NAME_PARAM)
+                    .orElseThrow { IllegalArgumentException("environmentName is required") }
                 ServerResponse.ok()
-                    .bodyValueAndAwait(dashboardService.findApplicationNamesByEnvironment(pathVariable))
+                    .bodyValueAndAwait(dashboardService.findApplicationNamesByEnvironment(environmentName))
             }
-        GET("$dashboardPrefixPattern/environments/{${ENVIRONMENT_PATH_VARIABLE}}/applications/{${APPLICATION_PATH_VARIABLE}}/hosts/name")
+        GET("$dashboardPrefixPattern/hosts/name")
             .and(accept(MediaType.APPLICATION_JSON))
+            .and(queryParam(ENVIRONMENT_NAME_PARAM) { it.isNotEmpty() })
+            .and(queryParam(APPLICATION_NAME_PARAM) { it.isNotEmpty() })
             .invoke {
-                val environment = it.pathVariable(ENVIRONMENT_PATH_VARIABLE)
-                val application = it.pathVariable(APPLICATION_PATH_VARIABLE)
+                val environmentName = it.queryParam(ENVIRONMENT_NAME_PARAM).orElseThrow()
+                val applicationName = it.queryParam(APPLICATION_NAME_PARAM).orElseThrow()
                 ServerResponse.ok()
-                    .bodyValueAndAwait(dashboardService.findHostNamesByEnvironmentAndApplication(environment, application))
+                    .bodyValueAndAwait(
+                        dashboardService.findHostNamesByEnvironmentAndApplication(
+                            environmentName,
+                            applicationName
+                        )
+                    )
             }
     }
 

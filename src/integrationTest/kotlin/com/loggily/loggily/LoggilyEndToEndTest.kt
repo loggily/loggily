@@ -51,7 +51,12 @@ class LoggilyEndToEndTest {
     @Test
     fun `it should be possible to find unique and alphabetically sorted application names for an environment name`() {
         val environmentName = "birds-services-dev"
-        val result = webTestClient.get().uri("/api/dashboard/environments/${environmentName}/applications/name")
+        val result = webTestClient.get()
+            .uri {
+                it.path("/api/dashboard/applications/name")
+                    .queryParam("environmentName", environmentName)
+                    .build()
+            }
             .accept(MediaType.APPLICATION_JSON)
             .exchange()
             .expectStatus().isOk
@@ -66,7 +71,13 @@ class LoggilyEndToEndTest {
     fun `it should be possible to find unique and alphabetically sorted host names for an application in an environment`() {
         val environmentName = "birds-services-dev"
         val applicationName = "crow"
-        val result = webTestClient.get().uri("/api/dashboard/environments/${environmentName}/applications/${applicationName}/hosts/name")
+        val result = webTestClient.get()
+            .uri {
+                it.path("/api/dashboard/hosts/name")
+                    .queryParam("environmentName", environmentName)
+                    .queryParam("applicationName", applicationName)
+                    .build()
+            }
             .accept(MediaType.APPLICATION_JSON)
             .exchange()
             .expectStatus().isOk
