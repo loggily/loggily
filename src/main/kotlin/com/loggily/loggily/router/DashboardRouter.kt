@@ -5,9 +5,13 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.MediaType
 import org.springframework.web.reactive.function.server.*
+import kotlin.jvm.optionals.getOrNull
 
 private const val ENVIRONMENT_NAME_PARAM = "environmentName"
 private const val APPLICATION_NAME_PARAM = "applicationName"
+private const val HOST_NAME_PARAM = "hostName"
+private const val PAGE_OFFSET_PARAM = "offset"
+private const val PAGE_LIMIT_PARAM = "limit"
 
 private const val SEARCH_TEXT_PARAM = "contains"
 
@@ -54,6 +58,20 @@ class DashboardRouter(private val dashboardService: DashboardService) {
                             applicationName
                         )
                     )
+            }
+        GET("$dashboardPrefixPattern/logs")
+            .and(
+                queryParam(ENVIRONMENT_NAME_PARAM) { it.isNotEmpty() }.and(queryParam(APPLICATION_NAME_PARAM) { it.isNotEmpty() })
+            )
+            .and(accept(MediaType.APPLICATION_NDJSON))
+            .invoke {
+                val environmentName = it.queryParam(ENVIRONMENT_NAME_PARAM).orElseThrow()
+                val applicationName = it.queryParam(APPLICATION_NAME_PARAM).orElseThrow()
+                val hostName = it.queryParam(HOST_NAME_PARAM).getOrNull()
+                val offset = it.queryParam(PAGE_OFFSET_PARAM).getOrNull()?.toLong()
+                val limit = it.queryParam(PAGE_LIMIT_PARAM).getOrNull()?.toInt()
+                ServerResponse.ok()
+                    .bodyAndAwait(dashboardService.findLogs(environmentName, applicationName, hostName, offset, limit))
             }
     }
 

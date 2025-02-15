@@ -1,5 +1,6 @@
 package com.loggily.loggily
 
+import com.loggily.loggily.rest.ReadableLog
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.*
 import org.springframework.boot.test.context.SpringBootTest
@@ -8,6 +9,7 @@ import org.springframework.context.annotation.Import
 import org.springframework.core.io.ClassPathResource
 import org.springframework.http.MediaType
 import org.springframework.test.web.reactive.server.WebTestClient
+import java.util.function.Function
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation::class)
 @Import(TestcontainersConfiguration::class)
@@ -85,5 +87,112 @@ class LoggilyEndToEndTest {
             .returnResult().responseBody
 
         assertThat(result).containsExactly("crow-7f87799957-gwhsq")
+    }
+
+    @Order(2)
+    @Test
+    fun `it should be possible to find logs by environment and application`() {
+        val environmentName = "birds-services-dev"
+        val applicationName = "peacock"
+        val result = webTestClient.get()
+            .uri {
+                it.path("/api/dashboard/logs")
+                    .queryParam("environmentName", environmentName)
+                    .queryParam("applicationName", applicationName)
+                    .build()
+            }
+            .accept(MediaType.APPLICATION_NDJSON)
+            .exchange()
+            .expectStatus().isOk
+            .expectBody(Array<ReadableLog>::class.java)
+            .returnResult().responseBody
+
+        assertThat(result).extracting(Function { it.structuredLog.body }).containsExactly("1", "2", "3", "4")
+    }
+
+    @Order(2)
+    @Test
+    fun `it should be possible to find logs by environment, application and host`() {
+        val environmentName = "birds-services-dev"
+        val applicationName = "peacock"
+        val host = "peacock-7f87799957-gwhsq"
+        val result = webTestClient.get()
+            .uri {
+                it.path("/api/dashboard/logs")
+                    .queryParam("environmentName", environmentName)
+                    .queryParam("applicationName", applicationName)
+                    .queryParam("hostName", host)
+                    .build()
+            }
+            .accept(MediaType.APPLICATION_NDJSON)
+            .exchange()
+            .expectStatus().isOk
+            .expectBody(Array<ReadableLog>::class.java)
+            .returnResult().responseBody
+
+        assertThat(result).extracting(Function { it.structuredLog.body }).containsExactly("1", "3", "4")
+    }
+
+    @Order(2)
+    @Test
+    fun `it should be possible to find logs by paging over it`() {
+        val environmentName = "birds-services-dev"
+        val applicationName = "peacock"
+        val host = "peacock-7f87799957-gwhsq"
+
+        webTestClient.get()
+            .uri {
+                it.path("/api/dashboard/logs")
+                    .queryParam("environmentName", environmentName)
+                    .queryParam("applicationName", applicationName)
+                    .queryParam("hostName", host)
+                    .queryParam("limit", 2)
+                    .queryParam("offset", 0)
+                    .build()
+            }
+            .accept(MediaType.APPLICATION_NDJSON)
+            .exchange()
+            .expectStatus().isOk
+            .expectBody(Array<ReadableLog>::class.java)
+            .returnResult().responseBody.also { result ->
+                assertThat(result).extracting(Function { it.structuredLog.body }).containsExactly("1", "3")
+            }
+
+
+        webTestClient.get()
+            .uri {
+                it.path("/api/dashboard/logs")
+                    .queryParam("environmentName", environmentName)
+                    .queryParam("applicationName", applicationName)
+                    .queryParam("hostName", host)
+                    .queryParam("limit", 2)
+                    .queryParam("offset", 2)
+                    .build()
+            }
+            .accept(MediaType.APPLICATION_NDJSON)
+            .exchange()
+            .expectStatus().isOk
+            .expectBody(Array<ReadableLog>::class.java)
+            .returnResult().responseBody.also { result ->
+                assertThat(result).extracting(Function { it.structuredLog.body }).containsExactly("4")
+            }
+
+        webTestClient.get()
+            .uri {
+                it.path("/api/dashboard/logs")
+                    .queryParam("environmentName", environmentName)
+                    .queryParam("applicationName", applicationName)
+                    .queryParam("hostName", host)
+                    .queryParam("limit", 2)
+                    .queryParam("offset", 3)
+                    .build()
+            }
+            .accept(MediaType.APPLICATION_NDJSON)
+            .exchange()
+            .expectStatus().isOk
+            .expectBody(Array<ReadableLog>::class.java)
+            .returnResult().responseBody.also { result ->
+                assertThat(result).extracting(Function { it.structuredLog.body }).isEmpty()
+            }
     }
 }
